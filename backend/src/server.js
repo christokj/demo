@@ -7,6 +7,12 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get('/', (req, res) => {
+    res.json({ status: 'API working!' });
+});
+app.get('/api', (req, res) => {
+    res.json({ status: 'API working!' });
+});
 app.get('/api/test', (req, res) => {
     res.json({ status: 'API working!' });
 });
