@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: './',
   build: {
-    outDir: '../public',  // Builds to root /public
+    outDir: '../public',
     emptyOutDir: true
   }
 })
